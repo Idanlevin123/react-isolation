@@ -1,0 +1,6 @@
+.TableCol {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: auto;
+    padding-top: 3px;
+}

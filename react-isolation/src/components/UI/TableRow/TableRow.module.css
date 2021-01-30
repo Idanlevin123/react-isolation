@@ -1,0 +1,11 @@
+.TableRow {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}

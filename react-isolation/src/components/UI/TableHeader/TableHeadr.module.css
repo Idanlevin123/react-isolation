@@ -1,0 +1,22 @@
+.TableHeader {
+  width: 80%;
+  display: flex;
+  border-style: outset;
+  background-color: #fafafa;
+  border-top: 1px solid #ededed;
+  border-bottom: 2px solid #ededed;
+  border-right: 1px solid #ededed;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.TableCol {
+  flex: 1;
+  margin-left: 10px;
+  border-right: 1px solid;
+  border-color: #a0a0a0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
