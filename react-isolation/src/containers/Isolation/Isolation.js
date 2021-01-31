@@ -18,6 +18,7 @@ class Isolation extends Component {
       let counterCountries = null;
       let countriesWithIsolatedAgents = [];
 
+      //Counting which agent appears only once in the data (for isolation)
       for (const [ , value] of this.props.data.entries()) {
         counterAgents = this.props.data.reduce((acc, cur) => cur.agent === value.agent ? ++acc : acc, 0);
           if (counterAgents === 1) {
@@ -25,6 +26,7 @@ class Isolation extends Component {
           }
       }
 
+      //Counting number of counrty occurences in which an agent appeared only once
       for (const [ , value] of countriesWithIsolatedAgents.entries()) {
         counterCountries = countriesWithIsolatedAgents.reduce((acc, cur) => cur === value ? ++acc : acc, 0);
 

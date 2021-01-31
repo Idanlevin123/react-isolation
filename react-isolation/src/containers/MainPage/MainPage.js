@@ -96,6 +96,7 @@ class MainPage extends Component {
     this.destLocation = this.setLatLongOfDest();
   }
 
+  //Arranging the mock data in ascending order by date
   setMockDataAscending = () => {
     let ascData = [];
     ascData = [...this.mockData].sort((a, b) =>
@@ -105,6 +106,7 @@ class MainPage extends Component {
     return ascData;
   };
 
+  //Getting Lat Long for fixed destination (e.g 10 Downing St)
   setLatLongOfDest = () => {
     let latLongDest = [];
     axios
@@ -129,8 +131,8 @@ class MainPage extends Component {
       });
   };
 
+  //Finding shortest and longest distance between all origins to fixed destination
   findDistance = (lat, lon) => {
-    
     for (const [index, value] of this.mockDataAsc.entries()) {
       axios
         .get("json", {
