@@ -174,16 +174,16 @@ class MainPage extends Component {
       this.mockDataAsc.map((obj, index) => {
         if (index === this.state.greenIndex)
         {
-          items.push(<TableRow key={index} color="green" data={obj} />);
+          items.push(<TableRow key={Math.random()} color="green" data={obj} />);
           
         }
         if (index === this.state.redIndex)
         {
-          items.push(<TableRow key={index} color="red" data={obj} />);
+          items.push(<TableRow key={Math.random()} color="red" data={obj} />);
           
         }
         if (index !== this.state.redIndex && index !== this.state.greenIndex) {
-          items.push(<TableRow key={index} data={obj} />);
+          items.push(<TableRow key={Math.random()} data={obj} />);
         }
         return items;
         

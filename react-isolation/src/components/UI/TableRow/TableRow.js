@@ -5,12 +5,10 @@ import TableRowItem from "../TableRowItem/TableRowItem";
 
 const tableRow = (props) => {
 
-  let i = 1;
-
   return (
     <div className={styles.TableRow}>
       {Object.values(props.data).map((val, index) => (
-        <TableRowItem key={index + new Date()} color={props.color} cellData={val} />
+        <TableRowItem key={Math.random()} color={props.color} cellData={val} />
       ))}
     </div>
   );
